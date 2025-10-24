@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Students</h1>
+        <div id="message"></div>
+        <form id="student-form">
+            <input type="hidden" id="student-id">
+            <input type="text" id="first_name" placeholder="First Name" required>
+            <input type="text" id="last_name" placeholder="Last Name" required>
+            <input type="date" id="birth_date" placeholder="Birth Date">
+            <input type="text" id="gender" placeholder="Gender">
+            <input type="text" id="address" placeholder="Address">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone">
+            <input type="number" id="registration_year" placeholder="Registration Year">
+            <input type="text" id="major" placeholder="Major">
+            <button type="submit">Add Student</button>
+            <button type="button" id="update-btn" style="display:none;">Update Student</button>
+            <button type="button" id="cancel-btn" style="display:none;">Cancel</button>
+        </form>
+        <hr>
+        <h2>All Students</h2>
+        <table id="students-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birth Date</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Registration Year</th>
+                    <th>Major</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
