@@ -72,5 +72,5 @@ To modify the application:
 2. Frontend changes can be made in the `frontend` directory
 3. Database schema changes should be made in `database.py`
 
-## Warning## 
-don't touch the data base file (students.db) some issues may accur
+## Warning
+don't touch the data base file (students.db) some issues may accure
